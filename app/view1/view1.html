@@ -10,22 +10,22 @@
         height: auto;
     }
 
-    .colorRotoplas {
+    /* .colorRotoplas {
         background-color: #1d98c2 !important;
         color: #FFF !important;
-    }
+    } */
 
-    .btn-renta{
+    /* .btn-renta{
         background-color: #0e1f42;
         border-color: #0e1f42;
         color: #fff;
-    }
+    } */
 
-    .btn-compra{
+    /* .btn-compra{
         background-color: #12839f;
         border-color: #12839f;
         color: #fff;
-    }
+    } */
 </style>
 
 <div id="preview1" class="preview" style="background: none;position: fixed;
@@ -172,15 +172,15 @@
                 <div class="carousel-inner">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="assets/brand/1.jpg" alt="" class="img-carrusel"/>
+                            <img src="assets/brand/banner-tienda-1.jpg" alt="" class="img-carrusel"/>
                         </div>
 
                         <div class="item">
-                            <img src="assets/brand/2.jpg" alt="" class="img-carrusel"/>
+                            <img src="assets/brand/banner-tienda-2.jpg" alt="" class="img-carrusel"/>
                         </div>
 
                         <div class="item">
-                            <img src="assets/brand/3.jpg" alt="" class="img-carrusel"/>
+                            <img src="assets/brand/banner-tienda-1.jpg" alt="" class="img-carrusel"/>
                         </div>
                     </div>
                 </div>
@@ -196,6 +196,8 @@
                 </a> -->
             </div>
             <!-- /CAROUSEL -->
+
+            <img src="assets/brand/banner-texto-1.jpg" alt="" class="img-carrusel"/>
 
             <img src="assets/brand/cp.JPG" alt="" class="img-carrusel"/>
 
@@ -215,7 +217,7 @@
                 </div>
             </div> -->
             <div  id="cpSection" class="panel panel-info" style="border:0px; border-radius: 0px;">
-                <div class="panel-heading" style="background-color: #1d98c2;">
+                <div class="panel" style="background-color: #1d98c2;">
                     <div class="form-group text-center">
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
@@ -256,7 +258,7 @@
                                         <div class="col-md-6">
                                             <div ng-show="buscarPrecioCompra(product.idProducto) > 0">
                                                 <center>
-                                                    <p ng-show="buscarPrecioCompra(product.idProducto)">Compra: {{buscarPrecioCompra(product.idProducto) | currency}} </p>
+                                                    <p style="color:#44c1e0;" ng-show="buscarPrecioCompra(product.idProducto)">Compra: {{buscarPrecioCompra(product.idProducto) | currency}} </p>
                                                 </center>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-compra" ng-click="agregarCompra(buscar(product.idProducto))">Comprar</button>
@@ -267,7 +269,7 @@
                                         <div class="col-md-6">
                                             <div>
                                                 <center>
-                                                    <p>Renta: {{buscarPrecio(product.idProducto) | currency}} </p>
+                                                    <p style="#009CDE">Renta: {{buscarPrecio(product.idProducto) | currency}} </p>
                                                 </center>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-warning" ng-click="agregarSuscripcion(buscar(product.idProducto))">Contratar</button>
@@ -288,17 +290,18 @@
                 <div class="panel-heading" ng-show="cphasError === false" >
                     <div class="row">
                         <div class="col-md-7">
-                            <h3>Carrito</h3>
+                            <img class="icon" height="40px" src="./assets/icons/icono-tienda-carrito.svg" alt="Carrito">
+                            <h3 class="text-heading">Carrito</h3>
                         </div>
                         <form ng-submit="validarPromocion()">
                             <div class="col-md-3" ng-show="registro.suscripciones.length">
-                                <div class="form-group">
-                                    <label>Codigo Promocion</label>
-                                    <input class="form-control" type="text" ng-model="registro.codigoPromocion" required>
+                                <div class="form-group codigo-input">
+                                    <!-- <label>Codigo Promocion</label> -->
+                                    <input placeholder="Codigo Promoción" class="form-control" type="text" ng-model="registro.codigoPromocion" required>
                                 </div>
                             </div>
-                            <div class="col-md-2" style="margin-top: 25px" ng-show="registro.suscripciones.length">
-                                <button type="submit" class="btn btn-info btn-block btn-sm">Validar</button>
+                            <div class="col-md-2 codigo-validar" style="" ng-show="registro.suscripciones.length">
+                                <button type="submit" class="btn btn-info btn-block btn-validar">Validar</button>
                             </div>
                         </form>
                     </div>
@@ -329,7 +332,7 @@
                                 <th>Tipo</th>
                                 <th>Codigo Postal</th>
                                 <th>Promocion</th>
-                                <th>Precio</th>
+                                <th style="text-align: left;">Precio</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -358,20 +361,23 @@
                                     <button type="button" class="btn btn-xs btn-danger" ng-click="quitarProducto($index)">Quitar</button>
                                 </td>
                             </tr>
-                            <tr style="background-color: #80808026">
+                            <tr class="carrito-total" style="/*background-color: #80808026;*/">
                                 <td>
-                                    <b>Total</b>
+                                    <!-- <b>Total</b> -->
                                 </td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td>
+
+                                    <b>Total</b>
+
                                     <b>{{sacarSuma() | currency}}
                                         <b>
                                             </td>
                                             <td>
-                                                <button class="btn btn-success btn-xs" ng-click="hacerCheckout()">Hacer Checkout</button>
+                                                <button class="btn btn-success btn-xs checkout-btn" ng-click="hacerCheckout()">Hacer Checkout</button>
                                             </td>
                                             </tr>
                                             </tbody>
@@ -384,7 +390,8 @@
 
                                                 <div class="panel panel-default" id="datosBasicos">
                                                     <div class="panel-heading">
-                                                        <h3>Datos Basicos</h3>
+                                                        <img class="icon" height="40px" src="./assets/icons/icono-tienda-basicos.svg" alt="Carrito">
+                                                        <h3 class="text-heading">Datos Basicos</h3>
                                                     </div>
                                                     <div class="panel-body">
                                                         <div class="panel panel-danger" ng-show="errorTarjeta">
@@ -394,20 +401,20 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label>Nombre</label>
-                                                                <input class="form-control" type="text" ng-model="registro.cliente.nombre" required pattern="[a-zA-Z0-9áéíóúÁEÍÓÚ ]+">
+                                                                <!-- <label>Nombre</label> -->
+                                                                <input placeholder="Nombre" class="form-control" type="text" ng-model="registro.cliente.nombre" required pattern="[a-zA-Z0-9áéíóúÁEÍÓÚ ]+">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label>Apellido</label>
-                                                                <input class="form-control" type="text" ng-model="registro.cliente.apellido" required pattern="[a-zA-Z0-9áéíóúÁEÍÓÚ ]+">
+                                                                <!-- <label>Apellido</label> -->
+                                                                <input placeholder="Apellido" class="form-control" type="text" ng-model="registro.cliente.apellido" required pattern="[a-zA-Z0-9áéíóúÁEÍÓÚ ]+">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label>Correo</label>
-                                                                <input id="inputCorreo" class="form-control" type="email" ng-model="registro.cliente.email" name="cliente_email" required>
+                                                                <!-- <label>Correo</label> -->
+                                                                <input placeholder="Correo" id="inputCorreo" class="form-control" type="email" ng-model="registro.cliente.email" name="cliente_email" required>
                                                             </div>
                                                         </div>
 
@@ -454,9 +461,11 @@
 
                                                 <div class="panel panel-default" ng-show="registro.suscripciones.length">
                                                     <div class="panel-heading">
-                                                        <h3>Direccion de Instalación</h3>
-                                                        <input type="checkbox" ng-model="mismaDireccion" ng-init="mismaDireccion = false" ng-change="isMismaDireccion()" ng-show="registro.suscripciones.length > 1">
-                                                        <span ng-show="registro.suscripciones.length > 1">Usar la misma direccion para todas las suscripciones</span>
+                                                        <img class="icon" height="40px" src="./assets/icons/icono-tienda-mantenimiento.svg" alt="Carrito">
+                                                        <h3 class="text-heading">Direccion de Instalación</h3>
+                                                        <br>
+                                                        <input style="display: inline-block !important;" type="checkbox" ng-model="mismaDireccion" ng-init="mismaDireccion = false" ng-change="isMismaDireccion()" ng-show="registro.suscripciones.length > 1">
+                                                        <span style="display: inline-block !important;" ng-show="registro.suscripciones.length > 1">Usar la misma direccion para todas las suscripciones</span>
                                                     </div>
                                                     <div class="panel-body" ng-repeat="suscripcion in registro.suscripciones| limitTo: mismaDireccionLongitud()">
                                                         <h5 ng-hide="mismaDireccion">
@@ -569,33 +578,37 @@
 
                                                 <div class="panel panel-default" ng-show="registro.suscripciones.length">
                                                     <div class="panel-heading">
-                                                        <h3>Datos de Facturación</h3>
-                                                        <input type="checkbox" ng-init="requiereFacturacion = false" ng-model="requiereFacturacion" ng-change="isRequiereFacturacion()"> Se requiere facturacion
+                                                        <img class="icon" height="40px" src="./assets/icons/icono-tienda-facturacion.svg" alt="Carrito">
+                                                        <h3 class="text-heading">Datos de Facturación</h3>
                                                         <br>
-                                                        <label>El
-                                                            <a href="http://www.sat.gob.mx/Paginas/Inicio.aspx">SAT</a> ya no solicita la dirección de facturación para emitir facturas</label>
-                                                        <input type="checkbox" ng-model="mismaFacturacion" ng-change="isMismaFacturacion()" ng-show="registro.suscripciones.length > 1">
-                                                        <span ng-show="registro.suscripciones.length > 1">Usar los mismos datos para todas las suscripciones</span>
+                                                        <input type="checkbox" ng-init="requiereFacturacion = false" ng-model="requiereFacturacion" ng-change="isRequiereFacturacion()"> Se requiere facturación
+                                                        <br>
+                                                        <label>
+                                                            El <a href="http://www.sat.gob.mx/Paginas/Inicio.aspx">SAT</a> ya no solicita la dirección de facturación para emitir facturas
+                                                        </label>
+                                                        <br>
+                                                        <input style="display: inline-block !important;" type="checkbox" ng-model="mismaFacturacion" ng-change="isMismaFacturacion()" ng-show="registro.suscripciones.length > 1">
+                                                        <span style="display: inline-block !important;" ng-show="registro.suscripciones.length > 1">Usar los mismos datos para todas las suscripciones</span>
                                                         <br ng-if="registro.suscripciones.length > 1">
                                                     </div>
                                                     <div class="panel-body" ng-if="isRequiereFacturacion()" ng-repeat="suscripcion in registro.suscripciones| limitTo: mismaFacturacionLongitud()">
                                                         <h5 ng-hide="mismaFacturacion">{{suscripcion.nombre}}</h5>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label>RFC</label>
-                                                                <input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.RFC" required>
+                                                                <!-- <label>RFC</label> -->
+                                                                <input placeholder="RFC" ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.RFC" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label>Razon Social</label>
-                                                                <input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.razonSocial" required>
+                                                                <!-- <label>Razon Social</label> -->
+                                                                <input placeholder="Razon Social" ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.razonSocial" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12">
                                                             <div class="form-group">
-                                                                <label>Notas</label>
-                                                                <textarea ng-change="isMismaFacturacion()" class="form-control" ng-model="suscripcion.facturacion.notas"></textarea>
+                                                                <!-- <label>Notas</label> -->
+                                                                <textarea placeholder="Notas" ng-change="isMismaFacturacion()" class="form-control" ng-model="suscripcion.facturacion.notas"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -605,17 +618,18 @@
                                                     <div class="panel-heading">
                                                         <div class="row">
                                                             <div class="col-md-8">
-                                                                <h3>Datos de Pago</h3>
+                                                                <img class="icon" height="40px" src="./assets/icons/icono-tienda-facturacion.svg" alt="Carrito">
+                                                                <h3 class="text-heading">Datos de Pago</h3>
                                                             </div>
                                                             <div class="col-md-4" style="margin-top: 20px">
                                                                 <div class="col-md-4">
                                                                     <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mc_vrt_thmb_45_2x.png" style="width:43px">
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <i style="color:#073A7A" class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+                                                                    <i style="color:#fff" class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <i style="color:#168FD4" class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+                                                                    <i style="color:#fff" class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -703,15 +717,19 @@
 
                                                         </div>
                                                         <div class="col-md-12">
-                                                            <br>
-                                                            <input type="checkbox" name="" required> Acepto los
-                                                            <a href="https://rotoplaslabs.com/terminos-y-condiciones">Términos y condiciones</a> de rotoplas y la
-                                                            <a href="https://rotoplaslabs.com/aviso-de-privacidad">Politica de Privacidad</a>
-                                                            <p>Tu pago es procesado por el payment en linea
-                                                                <a href="https://www.openpay.mx/">OpenPay</a> compra 100% segura</p>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-md-offset-3">
+                                                            <div class="col-md-8">
+                                                                <br>
+                                                                <input type="checkbox" name="" required>
+                                                                <div class="datos-pago-terminos">
+                                                                    Acepto los
+                                                                    <a href="https://rotoplaslabs.com/terminos-y-condiciones">Términos y condiciones</a> de rotoplas y la
+                                                                    <a href="https://rotoplaslabs.com/aviso-de-privacidad">Politica de Privacidad</a>
+                                                                    <p>Tu pago es procesado por el payment en linea
+                                                                    <a href="https://www.openpay.mx/">OpenPay</a> compra 100% segura</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <br>
                                                                 <button id="sendPayment" class="btn btn-success btn-block" ng-disabled="textoBoton == 'Cargando...'" type="submit">{{textoBoton}} {{sacarSuma() | currency}}</button>
                                                             </div>
                                                         </div>
