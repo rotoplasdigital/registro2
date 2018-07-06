@@ -1,0 +1,6898 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "04A2B48C-2AA1-49E6-94EC-4C8532F17EAE"
+		}
+	],
+"creatorBuild": "26148",
+"files": {
+	"\/.jshintrc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.jshintrc",
+		"oF": 0
+		},
+	"\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.travis.yml",
+		"oF": 0
+		},
+	"\/app\/app-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/app-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/app-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/app.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/app-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/app-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/assets\/dispensador_agua_fria_caliente.jpg": {
+		"ft": 16384,
+		"iS": 10742,
+		"oA": 0,
+		"oAP": "\/app\/assets\/dispensador_agua_fria_caliente.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/assets\/purificador_de_alta_capacidad.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/purificador_de_alta_capacidad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/purificador_de_carbono-activado-con-planta-coloidal.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/purificador_de_carbono-activado-con-planta-coloidal.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/purificador_de_osmosis.png": {
+		"ft": 32768,
+		"iS": 20272,
+		"oA": 0,
+		"oAP": "\/app\/assets\/purificador_de_osmosis.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/purificador_y_alcalinizador_bajo_tarja.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/purificador_y_alcalinizador_bajo_tarja.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/purificador_y_alcalinizador_sobre_tarja.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/purificador_y_alcalinizador_sobre_tarja.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/back\/adodb5\/adodb-active-record.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-active-record.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-active-recordx.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-active-recordx.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-csvlib.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-csvlib.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-datadict.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-datadict.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-error.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-error.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-errorhandler.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-errorhandler.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-errorpear.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-errorpear.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-exceptions.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-exceptions.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-iterator.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-iterator.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-lib.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-lib.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-memcache.lib.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-memcache.lib.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-pager.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-pager.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-pear.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-pear.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-perf.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-perf.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-php4.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-php4.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-time.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-time.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-xmlschema.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-xmlschema.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb-xmlschema03.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb-xmlschema03.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/adodb.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/adodb.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/back\/adodb5\/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/back\/adodb5\/contrib\/toxmlrpc.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/contrib\/toxmlrpc.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/cute_icons_for_site\/adodb.gif": {
+		"ft": 4194304,
+		"iS": 1091,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/cute_icons_for_site\/adodb.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/back\/adodb5\/cute_icons_for_site\/adodb2.gif": {
+		"ft": 4194304,
+		"iS": 1458,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/cute_icons_for_site\/adodb2.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-access.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-access.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-db2.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-db2.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-firebird.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-firebird.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-generic.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-generic.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-ibase.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-ibase.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-informix.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-informix.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-mssql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-mssql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-mssqlnative.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-mssqlnative.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-mysql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-mysql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-oci8.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-oci8.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-postgres.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-postgres.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-sapdb.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-sapdb.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-sqlite.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-sqlite.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/datadict\/datadict-sybase.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/datadict\/datadict-sybase.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/docs\/adodb.gif": {
+		"ft": 4194304,
+		"iS": 1091,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/adodb.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/back\/adodb5\/docs\/adodb2.gif": {
+		"ft": 4194304,
+		"iS": 1458,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/adodb2.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/back\/adodb5\/docs\/changelog.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/changelog.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/docs\/changelog_v2.x.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/changelog_v2.x.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/docs\/changelog_v3.x.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/changelog_v3.x.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/docs\/changelog_v4+5.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/changelog_v4+5.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/docs\/changelog_v4.x.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/changelog_v4.x.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/docs\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/docs\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-access.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-access.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ado.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ado.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ado5.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ado5.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ado_access.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ado_access.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ado_mssql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ado_mssql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ads.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ads.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-borland_ibase.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-borland_ibase.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-csv.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-csv.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-db2.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-db2.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-db2oci.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-db2oci.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-db2ora.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-db2ora.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-fbsql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-fbsql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-firebird.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-firebird.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ibase.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ibase.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-informix.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-informix.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-informix72.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-informix72.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-ldap.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-ldap.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mssql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mssql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mssql_n.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mssql_n.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mssqlnative.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mssqlnative.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mssqlpo.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mssqlpo.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mysql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mysql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mysqli.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mysqli.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mysqlpo.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mysqlpo.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-mysqlt.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-mysqlt.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-netezza.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-netezza.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-oci8.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-oci8.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-oci805.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-oci805.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-oci8po.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-oci8po.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-oci8quercus.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-oci8quercus.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-odbc.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-odbc.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-odbc_db2.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-odbc_db2.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-odbc_mssql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-odbc_mssql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-odbc_oracle.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-odbc_oracle.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-odbtp.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-odbtp.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-odbtp_unicode.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-odbtp_unicode.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-oracle.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-oracle.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo_mssql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo_mssql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo_mysql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo_mysql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo_oci.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo_oci.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo_pgsql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo_pgsql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo_sqlite.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo_sqlite.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-pdo_sqlsrv.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-pdo_sqlsrv.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-postgres.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-postgres.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-postgres64.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-postgres64.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-postgres7.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-postgres7.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-postgres8.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-postgres8.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-postgres9.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-postgres9.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-proxy.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-proxy.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sapdb.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sapdb.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sqlanywhere.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sqlanywhere.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sqlite.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sqlite.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sqlite3.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sqlite3.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sqlitepo.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sqlitepo.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sybase.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sybase.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-sybase_ase.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-sybase_ase.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/drivers\/adodb-vfp.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/drivers\/adodb-vfp.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-ar.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-ar.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-bg.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-bg.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-ca.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-ca.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-cn.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-cn.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-cz.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-cz.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-da.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-da.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-de.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-de.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-en.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-en.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-eo.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-eo.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-es.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-es.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-fa.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-fa.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-fr.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-fr.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-hu.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-hu.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-it.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-it.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-nl.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-nl.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-pl.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-pl.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-pt-br.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-pt-br.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-ro.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-ro.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-ru.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-ru.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-sv.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-sv.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-th.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-th.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/lang\/adodb-uk.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/lang\/adodb-uk.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/LICENSE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/pear\/Auth\/Container\/ADOdb.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/pear\/Auth\/Container\/ADOdb.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/pear\/auth_adodb_example.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/pear\/auth_adodb_example.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/pear\/readme.Auth.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/pear\/readme.Auth.txt",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-db2.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-db2.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-informix.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-informix.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-mssql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-mssql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-mssqlnative.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-mssqlnative.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-mysql.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-mysql.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-oci8.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-oci8.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/perf\/perf-postgres.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/perf\/perf-postgres.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/pivottable.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/pivottable.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/adodb5\/rsfilter.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/rsfilter.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/server.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/server.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-compress-bzip2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-compress-bzip2.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-compress-gzip.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-compress-gzip.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-cryptsession.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-cryptsession.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-cryptsession2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-cryptsession2.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-encrypt-mcrypt.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-encrypt-mcrypt.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-encrypt-md5.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-encrypt-md5.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-encrypt-secret.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-encrypt-secret.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-encrypt-sha1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-encrypt-sha1.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-sess.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-sess.txt",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-session-clob.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-session-clob.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-session-clob2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-session-clob2.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-session.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-session.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-session2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-session2.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-sessions.mysql.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-sessions.mysql.sql",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-sessions.oracle.clob.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-sessions.oracle.clob.sql",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/adodb-sessions.oracle.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/adodb-sessions.oracle.sql",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/crypt.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/crypt.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/old\/adodb-cryptsession.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/old\/adodb-cryptsession.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/old\/adodb-session-clob.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/old\/adodb-session-clob.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/old\/adodb-session.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/old\/adodb-session.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/old\/crypt.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/old\/crypt.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/session_schema.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/session_schema.xml",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/session\/session_schema2.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/session\/session_schema2.xml",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/toexport.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/toexport.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/tohtml.inc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/tohtml.inc.php",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xmlschema.dtd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xmlschema.dtd",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xmlschema03.dtd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xmlschema03.dtd",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xsl\/convert-0.1-0.2.xsl": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xsl\/convert-0.1-0.2.xsl",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xsl\/convert-0.1-0.3.xsl": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xsl\/convert-0.1-0.3.xsl",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xsl\/convert-0.2-0.1.xsl": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xsl\/convert-0.2-0.1.xsl",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xsl\/convert-0.2-0.3.xsl": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xsl\/convert-0.2-0.3.xsl",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xsl\/remove-0.2.xsl": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xsl\/remove-0.2.xsl",
+		"oF": 0
+		},
+	"\/app\/back\/adodb5\/xsl\/remove-0.3.xsl": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/adodb5\/xsl\/remove-0.3.xsl",
+		"oF": 0
+		},
+	"\/app\/back\/clientes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/clientes.php",
+		"oF": 0
+		},
+	"\/app\/back\/credentials.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/credentials.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/Email.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/Email.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/examples\/intouch_example.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/examples\/intouch_example.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/examples\/open_street_map_example.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/examples\/open_street_map_example.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/examples\/rollcall_example.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/examples\/rollcall_example.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/Pest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/Pest.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/PestJSON.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/PestJSON.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/PestXML.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/PestXML.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/pest\/README.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/pest\/README.markdown",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/TurboApiClient.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/TurboApiClient.php",
+		"oF": 0
+		},
+	"\/app\/back\/lib\/TurboClient.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/lib\/TurboClient.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/back\/Openpay\/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/back\/Openpay\/data\/cacert.pem": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/cacert.pem",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/data\/OpenpayApi.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/OpenpayApi.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/data\/OpenpayApiConnector.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/OpenpayApiConnector.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/data\/OpenpayApiConsole.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/OpenpayApiConsole.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/data\/OpenpayApiDerivedResource.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/OpenpayApiDerivedResource.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/data\/OpenpayApiError.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/OpenpayApiError.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/data\/OpenpayApiResourceBase.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/data\/OpenpayApiResourceBase.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/LICENSE",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/NOTES.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/NOTES.txt",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/Openpay.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/Openpay.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayBankAccount.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayBankAccount.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayCapture.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayCapture.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayCard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayCard.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayCharge.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayCharge.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayCustomer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayCustomer.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayFee.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayFee.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayPayout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayPayout.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayPlan.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayPlan.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayRefund.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayRefund.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpaySubscription.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpaySubscription.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayToken.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayToken.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayTransfer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayTransfer.php",
+		"oF": 0
+		},
+	"\/app\/back\/Openpay\/resources\/OpenpayWebhook.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/Openpay\/resources\/OpenpayWebhook.php",
+		"oF": 0
+		},
+	"\/app\/back\/playground.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/playground.php",
+		"oF": 0
+		},
+	"\/app\/back\/prueba.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/prueba.php",
+		"oF": 0
+		},
+	"\/app\/back\/sendEmail.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/sendEmail.php",
+		"oF": 0
+		},
+	"\/app\/back\/sqlConnections.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/sqlConnections.php",
+		"oF": 0
+		},
+	"\/app\/back\/sqlErrorMessages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/back\/sqlErrorMessages.php",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-loader\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-loader\/angular-loader.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/angular-loader.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-loader\/angular-loader.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/angular-loader.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-loader\/angular-loader.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/angular-loader.min.js.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-loader\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-loader\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-loader\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-loader\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-loader\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-mocks\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-mocks\/angular-mocks.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/angular-mocks.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-mocks\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-mocks\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-mocks\/ngAnimateMock.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/ngAnimateMock.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-mocks\/ngMock.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/ngMock.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-mocks\/ngMockE2E.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/ngMockE2E.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-mocks\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-mocks\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-mocks\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-route\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-route\/angular-route.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/angular-route.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-route\/angular-route.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/angular-route.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-route\/angular-route.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/angular-route.min.js.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-route\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-route\/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/index.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-route\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-route\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-route\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-route\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/.editorconfig",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/.jshintrc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/.jshintrc",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/.npmignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/.npmignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/.travis.yml",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/angular-spinner.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/angular-spinner.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/angular-spinner.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/angular-spinner.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/angular-spinner.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/angular-spinner.min.js.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-spinner\/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/CHANGELOG.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/Gruntfile.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/Gruntfile.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/karma.conf.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/karma.conf.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular-spinner\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular-spinner\/tests.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular-spinner\/tests.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular\/angular-csp.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/angular-csp.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/angular\/angular.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/angular.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular\/angular.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/angular.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular\/angular.min.js.gzip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/angular.min.js.gzip",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular\/angular.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/angular.min.js.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/angular\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular\/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/index.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/angular\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/angular\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/angular\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/angular\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.editorconfig",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.gitattributes",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.jscsrc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.jscsrc",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.jshintrc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.jshintrc",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/.travis.yml",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/CHANGELOG.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/CONTRIBUTING.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/CONTRIBUTING.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/.editorconfig",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/.gitattributes",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/.htaccess",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/404.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 3959,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/crossdomain.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/crossdomain.xml",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/css\/main.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/css\/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/css\/normalize.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/css.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/css.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/extend.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/extend.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/faq.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/faq.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/html.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/html.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/js.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/js.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/misc.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/misc.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/TOC.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/TOC.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/doc\/usage.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/doc\/usage.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/favicon.ico",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/humans.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/humans.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/img\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/img\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/index.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/js\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/js\/main.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/js\/plugins.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/js\/plugins.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/js\/vendor\/jquery-1.12.0.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/js\/vendor\/jquery-1.12.0.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/js\/vendor\/modernizr-2.8.3.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/js\/vendor\/modernizr-2.8.3.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/robots.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/tile-wide.png": {
+		"ft": 32768,
+		"iS": 1854,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/tile-wide.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/html5-boilerplate\/dist\/tile.png": {
+		"ft": 32768,
+		"iS": 3482,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/dist\/tile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/html5-boilerplate\/gulpfile.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/gulpfile.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/html5-boilerplate\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/.editorconfig",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/.gitattributes",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/404.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 3959,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/crossdomain.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/crossdomain.xml",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/css\/main.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/css.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/css.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/extend.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/extend.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/faq.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/faq.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/html.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/html.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/js.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/js.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/misc.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/misc.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/TOC.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/TOC.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/doc\/usage.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/doc\/usage.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/favicon.ico",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/humans.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/humans.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/img\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/img\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/index.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/js\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/js\/main.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/js\/plugins.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/js\/plugins.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/js\/vendor\/modernizr-2.8.3.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/js\/vendor\/modernizr-2.8.3.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/robots.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/tile-wide.png": {
+		"ft": 32768,
+		"iS": 1854,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/tile-wide.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/html5-boilerplate\/src\/tile.png": {
+		"ft": 32768,
+		"iS": 3482,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/src\/tile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/html5-boilerplate\/test\/file_content.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/test\/file_content.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/html5-boilerplate\/test\/file_existence.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/html5-boilerplate\/test\/file_existence.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/AUTHORS.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/AUTHORS.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/jquery\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/jquery\/dist\/core.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/core.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/dist\/jquery.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/jquery.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/dist\/jquery.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/jquery.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/dist\/jquery.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/jquery.min.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/jquery\/dist\/jquery.slim.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/jquery.slim.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/dist\/jquery.slim.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/jquery.slim.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/dist\/jquery.slim.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/dist\/jquery.slim.min.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map",
+		"oF": 0
+		},
+	"\/app\/bower_components\/jquery\/external\/sizzle\/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/external\/sizzle\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/jquery\/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/jquery\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/jquery\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/.eslintrc.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/.eslintrc.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/jsonp.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/jsonp.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/load.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/load.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/parseXML.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/parseXML.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/script.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/script.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/var\/location.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/var\/location.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/var\/nonce.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/var\/nonce.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/var\/rquery.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/var\/rquery.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/ajax\/xhr.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/ajax\/xhr.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/attributes.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/attributes.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/attributes\/attr.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/attributes\/attr.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/attributes\/classes.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/attributes\/classes.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/attributes\/prop.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/attributes\/prop.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/attributes\/support.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/attributes\/support.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/attributes\/val.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/attributes\/val.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/callbacks.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/callbacks.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/access.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/access.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/DOMEval.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/DOMEval.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/init.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/init.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/nodeName.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/nodeName.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/parseHTML.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/parseHTML.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/ready-no-deferred.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/ready-no-deferred.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/ready.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/ready.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/readyException.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/readyException.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/stripAndCollapse.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/stripAndCollapse.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/support.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/support.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/addGetHookIf.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/addGetHookIf.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/adjustCSS.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/adjustCSS.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/curCSS.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/curCSS.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/showHide.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/showHide.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/support.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/support.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/var\/cssExpand.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/var\/cssExpand.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/var\/getStyles.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/var\/getStyles.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/var\/isHiddenWithinTree.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/var\/isHiddenWithinTree.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/var\/rmargin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/var\/rmargin.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/css\/var\/swap.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/css\/var\/swap.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/data.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/data.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/data\/Data.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/data\/Data.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/data\/var\/acceptData.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/data\/var\/acceptData.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/data\/var\/dataPriv.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/data\/var\/dataPriv.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/data\/var\/dataUser.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/data\/var\/dataUser.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/deferred.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/deferred.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/deferred\/exceptionHook.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/deferred\/exceptionHook.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/deprecated.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/deprecated.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/dimensions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/dimensions.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/effects.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/effects.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/effects\/animatedSelector.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/effects\/animatedSelector.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/effects\/Tween.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/effects\/Tween.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/event.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/event.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/event\/ajax.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/event\/ajax.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/event\/alias.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/event\/alias.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/event\/focusin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/event\/focusin.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/event\/support.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/event\/support.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/event\/trigger.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/event\/trigger.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/exports\/amd.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/exports\/amd.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/exports\/global.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/exports\/global.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/jquery.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/jquery.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/buildFragment.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/buildFragment.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/getAll.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/getAll.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/setGlobalEval.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/setGlobalEval.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/support.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/support.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/var\/rscriptType.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/var\/rscriptType.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/var\/rtagName.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/var\/rtagName.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/manipulation\/wrapMap.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/manipulation\/wrapMap.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/offset.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/offset.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/queue.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/queue.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/queue\/delay.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/queue\/delay.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/selector-native.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/selector-native.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/selector-sizzle.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/selector-sizzle.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/selector.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/selector.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/serialize.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/serialize.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/traversing.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/traversing.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/traversing\/findFilter.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/traversing\/findFilter.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/traversing\/var\/dir.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/traversing\/var\/dir.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/traversing\/var\/siblings.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/traversing\/var\/siblings.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/arr.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/arr.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/class2type.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/class2type.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/concat.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/concat.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/document.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/document.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/documentElement.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/documentElement.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/fnToString.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/fnToString.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/getProto.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/getProto.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/hasOwn.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/hasOwn.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/indexOf.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/indexOf.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/ObjectFunctionString.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/ObjectFunctionString.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/pnum.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/pnum.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/push.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/push.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/rcssNum.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/rcssNum.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/rnothtmlwhite.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/rnothtmlwhite.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/slice.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/slice.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/support.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/support.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/var\/toString.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/var\/toString.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/jquery\/src\/wrap.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/app\/bower_components\/jquery\/src\/wrap.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/spin\/.npmignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/.npmignore",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/assets\/bg.png": {
+		"ft": 32768,
+		"iS": 17908,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/spin\/assets\/browsers.png": {
+		"ft": 32768,
+		"iS": 34450,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/browsers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/spin\/assets\/crosshair.gif": {
+		"ft": 4194304,
+		"iS": 13167,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/crosshair.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/bower_components\/spin\/assets\/fd-slider\/fd-slider-tooltip.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/fd-slider\/fd-slider-tooltip.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/spin\/assets\/fd-slider\/fd-slider.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/fd-slider\/fd-slider.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/spin\/assets\/fd-slider\/fd-slider.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/fd-slider\/fd-slider.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/spin\/assets\/github.gif": {
+		"ft": 4194304,
+		"iS": 1298,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/github.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/bower_components\/spin\/assets\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/main.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/spin\/assets\/prettify.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/prettify.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/bower_components\/spin\/assets\/prettify.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/prettify.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/spin\/assets\/preview.jpg": {
+		"ft": 16384,
+		"iS": 12063,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/preview.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/bower_components\/spin\/assets\/ribbon.png": {
+		"ft": 32768,
+		"iS": 7660,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/assets\/ribbon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/bower_components\/spin\/dist\/spin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/dist\/spin.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/spin\/dist\/spin.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/dist\/spin.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/spin\/example\/jquery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/example\/jquery.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/example\/modernizr.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/example\/modernizr.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/example\/modernizr.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/example\/modernizr.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/bower_components\/spin\/example\/positioning.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/example\/positioning.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/example\/settings.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/example\/settings.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/favicon.ico",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/index.html",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/Makefile": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/Makefile",
+		"oF": 0
+		},
+	"\/app\/bower_components\/spin\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/bower_components\/spin\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/app\/bower_components\/spin\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/app\/bower_components\/spin\/spin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/bower_components\/spin\/spin.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/components\/version\/interpolate-filter.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/components\/version\/interpolate-filter-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/components\/version\/interpolate-filter_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/components\/version\/interpolate-filter_test-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/components\/version\/version-directive.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/components\/version\/version-directive-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/components\/version\/version-directive_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/components\/version\/version-directive_test-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/components\/version\/version.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/components\/version\/version-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/components\/version\/version_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/components\/version\/version_test-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/index-async.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/index-async.html",
+		"oF": 0
+		},
+	"\/app\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/index.html",
+		"oF": 0
+		},
+	"\/app\/view1\/view1-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view1\/view1-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view1\/view1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/view1\/view1.html",
+		"oF": 0
+		},
+	"\/app\/view1\/view1.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view1\/view1-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view1\/view1_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view1\/view1_test-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view2\/view2-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view2\/view2-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view2\/view2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/view2\/view2.html",
+		"oF": 0
+		},
+	"\/app\/view2\/view2.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view2\/view2-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view2\/view2_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view2\/view2_test-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view3\/view3-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view3\/view3-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view3\/view3.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/view3\/view3.html",
+		"oF": 0
+		},
+	"\/app\/view3\/view3.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view3\/view3-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/view3\/view3_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/view3\/view3_test-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/e2e-tests\/protractor.conf.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/e2e-tests\/protractor.conf-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/e2e-tests\/scenarios.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/e2e-tests\/scenarios-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/karma.conf.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/karma.conf-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/node_modules",
+		"oF": 0
+		},
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 533761977,
+	"displayValue": "AQWA-Font-End",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets_teal"
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"alwaysUseExternalServer": 1,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigFileHandlingType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": 0
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": 0
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": 0
+			},
+		"es2015-block-scoped-functions": {
+			"active": 0
+			},
+		"es2015-block-scoping": {
+			"active": 0
+			},
+		"es2015-classes": {
+			"active": 0
+			},
+		"es2015-computed-properties": {
+			"active": 0
+			},
+		"es2015-constants": {
+			"active": 0
+			},
+		"es2015-destructuring": {
+			"active": 0
+			},
+		"es2015-duplicate-keys": {
+			"active": 0
+			},
+		"es2015-for-of": {
+			"active": 0
+			},
+		"es2015-function-name": {
+			"active": 0
+			},
+		"es2015-literals": {
+			"active": 0
+			},
+		"es2015-modules-amd": {
+			"active": 0
+			},
+		"es2015-modules-commonjs": {
+			"active": 0
+			},
+		"es2015-modules-systemjs": {
+			"active": 0
+			},
+		"es2015-modules-umd": {
+			"active": 0
+			},
+		"es2015-object-super": {
+			"active": 0
+			},
+		"es2015-parameters": {
+			"active": 0
+			},
+		"es2015-shorthand-properties": {
+			"active": 0
+			},
+		"es2015-spread": {
+			"active": 0
+			},
+		"es2015-sticky-regex": {
+			"active": 0
+			},
+		"es2015-template-literals": {
+			"active": 0
+			},
+		"es2015-typeof-symbol": {
+			"active": 0
+			},
+		"es2015-unicode-regex": {
+			"active": 0
+			},
+		"es3-member-expression-literals": {
+			"active": 0
+			},
+		"es3-property-literals": {
+			"active": 0
+			},
+		"es5-property-mutators": {
+			"active": 0
+			},
+		"eval": {
+			"active": 0
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": 0
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": 0
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": 0
+			},
+		"syntax-class-properties": {
+			"active": 0
+			},
+		"syntax-decorators": {
+			"active": 0
+			},
+		"syntax-do-expressions": {
+			"active": 0
+			},
+		"syntax-export-extensions": {
+			"active": 0
+			},
+		"syntax-flow": {
+			"active": 0
+			},
+		"syntax-function-bind": {
+			"active": 0
+			},
+		"syntax-function-sent": {
+			"active": 0
+			},
+		"syntax-jsx": {
+			"active": 0
+			},
+		"syntax-object-rest-spread": {
+			"active": 0
+			},
+		"undeclared-variables-check": {
+			"active": 0
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelPresetType": 193,
+	"babelRetainLines": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerAutoCreateInfoFile": 1,
+	"bowerInstallDevDependencies": 0,
+	"bowerSaveDependencies": 1,
+	"bowerSaveDevDependencies": 0,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 1,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always'}"
+			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-between-class-members": {
+			"active": 0,
+			"optionString": "'always', {exceptAfterSingleLine: false}"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 1,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': false}"
+			},
+		"no-self-compare": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": "{'allowAtRootLevel': false}"
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-template-curly-in-string": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', {'avoidEscape': true, 'allowTemplateLiterals': true}"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-yield": {
+			"active": 1,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http:\/\/localhost:8890",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"quality": 100
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 0
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"ieCompatibility": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "stylus",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"jsxMode": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 2,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
+		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"overrideExternalServerCSS": 0,
+	"previewPathAddition": "GameBadgers\/AQWA-Font-End\/app",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"sourceFolderName": "source",
+	"susyVersion": 3,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "3"
+}
