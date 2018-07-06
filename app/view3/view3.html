@@ -1,0 +1,1300 @@
+<style>
+    #agenda .modal-dialog {
+        width: 80% !important;
+        height: 80% !important;
+    }
+    div#agendaBody.modal-body{
+        width: 100%;;
+        height: 100%;
+    }
+
+    .modal-dialog{
+        overflow-y: initial !important
+    }
+    .modal-body{
+        height: auto;
+        overflow-y: auto;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .acuityFrame {
+            width: 100%;
+            height: 
+                450px;
+        }
+    } 
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+
+        .acuityFrame {
+            width: 100%;
+            height: 
+                600px;
+        }
+    } 
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .acuityFrame {
+            .acuityFrame {
+                width: 100%;
+                height: 800px;
+            }
+        }
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+
+        .acuityFrame {
+            width: 100%;
+            height: 800px;
+        }
+    }
+
+
+</style>
+
+<div id="preview1" class="preview" style="background: none;position: fixed;
+     top: 50%;
+     left: 50%;
+     margin-top: -50px;
+     margin-left: -50px;
+     width: 100px;
+     height: 100px; z-index: 2000000000000">
+    <h4 ng-show="cargando">
+        <center>Procesando</center>
+    </h4>
+</div>
+
+<!-- #errorModal -->
+
+<div id="errorModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Datos de petición:</h4>
+            </div>
+            <div class="modal-body">
+                <p>Hubo un problema al entender los datos de la solicitud, puede continuar, pero algunos datos puede que no esten disponibles.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="agenda" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="modal-title">
+                            <span class="align-middle" style="color: #1361AC; font-size: 20px;">
+                                <strong>¡Felicidades!, acabas de realizar con éxito tu contratación</strong>
+                            </span>
+                        </h4>
+                    </div> 
+                    <div class="col-md-2 pull-right">
+                        <img src="assets/rotoplaslogo.png" alt="Servicio de Agua Purificada Rotoplas" style="    display: block;    max-width: auto;    height: 65px;"/>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <br>
+                        <center>
+                            <p style="font-size: 20px;">
+
+                                Para concluir satisfactoriamente el registro de tu servicio contratado, sigue estos 3 sencillos pasos para agendar tu instalación en el horario de tu conveniencia.
+
+                            </p>
+                            <br>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-body" id="agendaBody"></div>
+            <div class="modal-footer">
+                <span class="pull-left" style="margin-top: 10px; font-size: 18px;">
+                    Si tienes dudas o aclaraciones marca a nuestro equipo de servicio a clientes al Tel: <strong>5547420835</strong>
+                </span>
+
+
+                <button type="button" class="btn btn-warning" style="font-size: 18px;" ng-click="callSuccess();" data-dismiss="modal">No puedo agendar en este momento la instalación, favor de contactarme</button>
+                <button type="button" class="btn btn-default" style="background-color: #1361AC; color: #FFF !important; font-size: 18px;" ng-click="callSuccess();" data-dismiss="modal">Continuar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="errorRequestModal" class="modal fade" role="dialog"  data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" ng-click="onerror(); clearError();" >&times;</button>
+                <h4 class="modal-title">Error en la petici&oacute;n</h4>
+            </div>
+            <div class="modal-body">
+                <div id="RequestError"></div>
+                <p>{{ RequestError}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<form id="login" ng-hide="logeado" ng-submit="logearse()">
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <label>Correo</label>
+                <input type="email" name="" class="form-control" ng-model="correo">
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <label>Contrasena</label>
+                <input type="password" name="" class="form-control" ng-model="contrasena">
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <button class="btn btn-block btn-primary">Iniciar Sesión</button>
+        </div>
+    </div>
+
+
+</form>
+
+
+<div class="container-fluid" ng-show="hasSale">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-md-10 col-sm-8" >
+                    <span class="align-middle" style="color: #1361AC; font-size: 30px;">
+                        <strong>¡Felicidades!, acabas de realizar con éxito tu contratación</strong>
+                    </span>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <img src="assets/rotoplaslogo.png" alt="Servicio de Agua Purificada Rotoplas" class="img-responcive" style="height: 60px;"/>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <br>
+                    <center>
+                        <p style="font-size: 16px;">
+
+                            Para concluir satisfactoriamente el registro de tu servicio contratado, sigue estos 3 sencillos pasos para agendar tu instalación en el horario de tu conveniencia.
+
+                        </p>
+                        <br>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <!--
+            <iframe class="acuityFrame" src="https://rotoplas.as.me/schedule.php?"></iframe>
+            -->
+            <div id="agendaSectionBody"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="row">
+                    <center>
+                        <span style="margin-top: 10px; margin-bottom: 10px; font-size: 16px;">
+                            Si tienes dudas o aclaraciones marca a nuestro equipo de servicio a clientes al Tel: <strong>5547420835</strong>
+                        </span>
+                    </center>
+                </div>
+
+                <div class="row">
+                    <center>
+                        <!-- background-color: #1361AC -->
+                        <button type="button" class="btn btn-default btn-sm" style="margin-left: 10px;" ng-click="callSuccess();" data-dismiss="modal">Ver confirmación de compra</button>
+                        <button type="button" class="btn btn-warning btn-sm" ng-click="callSuccess();" data-dismiss="modal">No puedo agendar en este momento la instalación, favor de contactarme</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container-fluid"  ng-hide="hasSale || logeado == false">
+    <br>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+            <b><span>Bienvenido: {{ userName}} </span></b>
+
+
+
+            <span class="glyphicon glyphicon-log-out pull-right" aria-hidden="true" style="cursor: pointer;" ng-click="logout();" title="Cerrar sesión"></span>
+
+            <a href="#!/registro">
+                <span class="glyphicon glyphicon-home pull-right" aria-hidden="true" style="cursor: pointer; margin-right: 5px"  title="Registro Externo"></span>
+            </a>
+
+            <a href="https://rotoplaslabs.com.mx/admin">
+                <span class="glyphicon glyphicon-list pull-right" aria-hidden="true" style="cursor: pointer; margin-right: 5px"  title="Administrador"></span>
+            </a>
+
+            <div class="panel panel-info">
+                <div class="panel-heading" style="background-color: #1361AC;">
+                    <div class="form-group text-center">
+                        <h4 style="color:white">Codigo Postal</h4>
+                        <input placeholder="Ej. 05500" type="text" ng-model="sugZipCode" ng-change="buscarZipCode(sugZipCode)" class="">
+                        <div class="row" ng-if="type === 'admin'">
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="form-group">
+                                    <br>
+                                    <label style="color:white">Vendedor</label>
+                                    <select class="form-control" ng-model="registro.vendedor">
+                                        <option value="{{vendedor.id}}" ng-repeat="vendedor in vendedores">{{vendedor.name}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default" ng-show="suges.length">
+                <div class="panel-heading">
+                    <h3>Productos</h3>
+
+                </div>
+                <div class="panel-body">
+                    <div class="row newRow">
+                        <div class="col-md-3" ng-repeat="product in suges">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h5 class="text-center">{{buscarNombre(product.idProducto) | capitalize}}</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <img class="img-responsive" ng-src="{{buscarImagen(product.idProducto)}}">
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row" style="font-weight: 700; font-size: 11px">
+                                        <div class="col-md-6">
+                                            <center>
+                                                <p>Renta: {{buscarPrecio(product.idProducto) | currency}} </p>
+                                            </center>
+                                            <center>
+                                                <button type="button" class="btn btn-xs btn-success compra" ng-click="agregarSuscripcion(buscar(product.idProducto)); calcularPromociones();">Contratar</button>
+                                            </center>
+                                        </div>
+                                        <div class="col-md-6" ng-show="buscarPrecioCompra(product.idProducto)">
+                                            <center>
+                                                <p ng-show="buscarPrecioCompra(product.idProducto)">Compra: {{buscarPrecioCompra(product.idProducto) | currency}} </p>
+                                            </center>
+                                            <center>
+                                                <button type="button" class="btn btn-xs btn-info compra" ng-click="agregarCompra(buscar(product.idProducto))">Comprar</button>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carrScroll" class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>Carrito</h3>
+                        </div>
+                        <form ng-submit="validarPromocion();">
+                            <div class="col-md-3" ng-show="registro.suscripciones.length">
+                                <div class="form-group">
+                                    <label>Codigo Promocion</label>
+                                    <input class="form-control" type="text" ng-model="registro.codigoPromocion" required>
+                                </div>
+                            </div>
+                            <div class="col-md-2" style="margin-top: 25px" ng-show="registro.suscripciones.length">
+                                <button type="submit" class="btn btn-info btn-block btn-sm">Validar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="panel panel-warning" ng-hide="registro.suscripciones.length">
+                        <div class="panel-heading">
+                            <h5>El carrito esta vacio</h5>
+                        </div>
+                    </div>
+                    <div class="panel panel-danger" ng-show="promoValida">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" ng-click="quitarError()" class="close" style="margin-top:5px">&times </a>
+                            <h5>Codigo de Promoción Invalido</h5>
+                        </div>
+                    </div>
+                    <table class="table" ng-show="registro.suscripciones.length">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Producto</th>
+                                <th>Tipo</th>
+                                <th ng-show="registro.suscripciones[0].instalacion.codigoPostal">Codigo Postal</th>
+                                <th>Promocion</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="producto in registro.suscripciones">
+                                <td style="width: 7%">
+                                    <img class="img-responsive" ng-src="{{buscarImagen(producto.idProducto)}}">
+                                </td>
+                                <td>{{buscarNombre(producto.idProducto)}}</td>
+                                <td>
+                                    <span ng-if="!producto.compraUnica">Renta</span>
+                                    <span ng-if="producto.compraUnica">Compra</span>
+                                </td>
+                                <td ng-if="producto.instalacion.codigoPostal">{{producto.instalacion.codigoPostal}}</td>
+                                <td>
+                                    <div style="overflow-x: scroll;">
+                                        <span style="padding:5px; background-color:#ddd; margin-right: 5px; margin-top:5px; border-radius: 10px" ng-repeat="promo in producto.promociones">{{promo.nombre}}
+                                            <span ng-if="(promo.usos < 1000) && promo.tipo != 1">por {{promo.usos}} meses</span>
+                                            <span style="color:#c11a1a; cursor: pointer;" ng-click="quitarPromo(producto, promo)">
+                                                x</span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>{{generarPrecio(producto) | currency}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-xs btn-warning" ng-click="quitarProducto($index)">Quitar</button>
+                                </td>
+                            </tr>
+                            <tr style="background-color: #80808026">
+                                <td>
+                                    <b>Total</b>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <!-- <b>{{sacarSuma() | currency}} -- {{ calcularPromociones() | currency}}</b> -->
+                                    <b>{{ calcularPromociones() | currency}}</b>
+                                </td>
+                                <td>
+                                    <button class="btn btn-success btn-xs" ng-click="hacerCheckout(); calcularPromociones();">Hacer Checkout</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <form id="processCard" ng-submit="hacerPedido()" ng-show="logeado && checkout">
+
+
+                <div class="panel panel-default" id="datosBasicos">
+                    <div class="panel-heading">
+                        <h3>Datos Basicos</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-info" ng-show="errorTarjeta">
+                            <div class="panel-heading">
+                                {{errorTexto}}
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <label>Correo Electrónico</label>
+                                <input id="inputCorreo" class="form-control" type="email" ng-model="registro.cliente.email" name="cliente_email" required>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" style="margin-top: 24px" type="button" ng-click="ClienteRegistrado()"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button> 
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input class="form-control" type="text" ng-model="registro.cliente.nombre" required pattern="[a-zA-Z0-9áéíóúÁEÍÓÚ ]+">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Apellido</label>
+                                <input class="form-control" type="text" ng-model="registro.cliente.apellido" required pattern="[a-zA-Z0-9áéíóúÁEÍÓÚ ]+">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Telefono</label>
+                                <input required pattern="[0-9]{10}" placeholder="Numero a 10 digitos, Ej. 5544332211" class="form-control" type="text" ng-model="registro.cliente.telefono"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Tipo de Telefono</label>
+                                <select class="form-control" ng-model="registro.cliente.tipoTelefono" required>
+                                    <option value=""></option>
+                                    <option value="Fijo">Fijo</option>
+                                    <option value="Celular">Celular</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Telefono 2</label>
+                                <input pattern="[0-9]{10}" placeholder="Numero a 10 digitos, Ej. 5544332211" class="form-control" type="text" ng-model="registro.cliente.telefono2">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Tipo de Telefono 2</label>
+                                <select class="form-control" ng-model="registro.cliente.tipoTelefono2">
+                                    <option value=""></option>
+                                    <option value="Fijo">Fijo</option>
+                                    <option value="Celular">Celular</option>
+                                </select>
+                                <input type="hidden" id="zohoid" name="zohoid" ng-model="registro.cliente.zohoId" value=""/>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default" ng-show="registro.suscripciones.length">
+                    <div class="panel-heading">
+                        <h3>Direccion de Instalación</h3>
+
+                        <!--
+                        <input type="checkbox" ng-model="mismaDireccion" ng-init="mismaDireccion = false" ng-change="isMismaDireccion()" ng-show="registro.suscripciones.length > 1">
+                        <span ng-show="registro.suscripciones.length > 1">Usar la misma direccion para todas las suscripciones</span>
+                        -->
+                        <div ng-show="isZipUnique() == true">
+                            <label class="checkbox-inline" >
+                                <input type="checkbox" ng-model="mismaDireccion" ng-init="mismaDireccion = false" ng-change="isMismaDireccion()">
+                                Usar la misma dirección para todas las suscripciones
+                            </label>
+                        </div>
+
+                        <br>
+
+                        <div ng-show="registro.solicitudUSuario.existe == true && DireccionesCliente.length > 0">
+                            <label for="direccionesClientes">Seleccionar una dirección del cliente: </label>
+                            <select class="form-control" id="direccionesClientes" name="direccionesClientes" ng-model="registro.direccion.id" ng-change="direccionExistenteSeleccionada(); enableDireccionInstalacion();">
+                                <option value="0" selected="selected">Seleccionar dirección registrada</option>
+                                <option ng-repeat="dir in DireccionesCliente" value="{{ dir.DireccionId}}">{{ dir.calle}} {{ dir.numExt}} {{ dir.colonia}}</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="panel-body" ng-repeat="suscripcion in registro.suscripciones| limitTo: mismaDireccionLongitud()">
+                        <h5 ng-hide="mismaDireccion">
+                            <span ng-show="suscripcion.compraUnica">Compra - </span>{{suscripcion.nombre}}</h5>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Calle</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.calle" required>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Num Ext</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.numExt" required>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Num Int</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.numInt">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Colonia</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.colonia" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Localidad</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.localidad">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Municipio/Delegación</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.municipio" ng-disabled="rol != 1">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Ciudad</label>
+                                <input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.ciudad" ng-disabled="rol != 1">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Estado</label>
+                                <select ng-change="isMismaDireccion()" class="form-control" ng-model="suscripcion.instalacion.estado" ng-disabled="rol != 1">
+                                    <option value="">Seleccione uno...</option>
+                                    <option value="Aguascalientes">Aguascalientes</option>
+                                    <option value="Baja California">Baja California</option>
+                                    <option value="Baja California Sur">Baja California Sur</option>
+                                    <option value="Campeche">Campeche</option>
+                                    <option value="Chiapas">Chiapas</option>
+                                    <option value="Chihuahua">Chihuahua</option>
+                                    <option value="Coahuila">Coahuila</option>
+                                    <option value="Colima">Colima</option>
+                                    <option value="Ciudad de México">Ciudad de México</option>
+                                    <option value="Durango">Durango</option>
+                                    <option value="México">México</option>
+                                    <option value="Guanajuato">Guanajuato</option>
+                                    <option value="Guerrero">Guerrero</option>
+                                    <option value="Hidalgo">Hidalgo</option>
+                                    <option value="Jalisco">Jalisco</option>
+                                    <option value="Michoacán">Michoacán</option>
+                                    <option value="Morelos">Morelos</option>
+                                    <option value="Nayarit">Nayarit</option>
+                                    <option value="Nuevo León">Nuevo León</option>
+                                    <option value="Oaxaca">Oaxaca</option>
+                                    <option value="Puebla">Puebla</option>
+                                    <option value="Querétaro">Querétaro</option>
+                                    <option value="Quintana Roo">Quintana Roo</option>
+                                    <option value="San Luis Potosí">San Luis Potosí</option>
+                                    <option value="Sinaloa">Sinaloa</option>
+                                    <option value="Sonora">Sonora</option>
+                                    <option value="Tabasco">Tabasco</option>
+                                    <option value="Tamaulipas">Tamaulipas</option>
+                                    <option value="Tlaxcala">Tlaxcala</option>
+                                    <option value="Veracruz">Veracruz</option>
+                                    <option value="Yucatán">Yucatán</option>
+                                    <option value="Zacatecas">Zacatecas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Codigo Postal</label>
+                                <input ng-change="isMismaDireccion(); traerDireccion(suscripcion.instalacion)" ng-init="traerDireccion(suscripcion.instalacion)"
+                                       class="form-control" type="text" ng-model="suscripcion.instalacion.codigoPostal"   ng-disabled="rol != 1">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <!--
+                                  <div class="form-group">
+                                      <label>Fecha de Instalacion</label>
+                                      <input ng-change="isMismaDireccion()" class="form-control" type="datetime-local" ng-model="suscripcion.instalacion.fechaInstalacion">
+                                  </div>
+                            -->
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Notas</label>
+                                <textarea ng-change="isMismaDireccion()" class="form-control" ng-model="suscripcion.instalacion.notas"></textarea>
+                            </div>
+                        </div>
+                        <input class="form-control hidden" type="text" ng-model="suscripcion.instalacion.pais" value="Mexico" hidden>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default" ng-show="registro.suscripciones.length">
+                    <div class="panel-heading">
+                        <h3>Datos de Facturación</h3>
+                        <!--
+                        <input type="checkbox" ng-init="requiereFacturacion = false" ng-model="requiereFacturacion" ng-change="isRequiereFacturacion()"> Se requiere facturacion
+                        -->
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-init="requiereFacturacion = false" ng-model="requiereFacturacion" ng-change="isRequiereFacturacion()">
+                            Se requiere facturación
+                        </label>
+
+                        <br>
+                        <label>El
+                            <a href="http://www.sat.gob.mx/Paginas/Inicio.aspx">SAT</a> ya no solicita la dirección de facturación para emitir facturas</label>
+                        <br>
+
+                        <label class="checkbox-inline" ng-show="registro.suscripciones.length > 1 && requiereFacturacion == true">
+                            <input type="checkbox" ng-model="mismaFacturacion" ng-change="isMismaFacturacion()" ng-show="registro.suscripciones.length > 1">
+                            Usar los mismos datos para todas las suscripciones
+                        </label>
+
+                        <!--
+                        <input type="checkbox" ng-model="mismaFacturacion" ng-change="isMismaFacturacion()" ng-show="registro.suscripciones.length > 1">
+                        <span ng-show="registro.suscripciones.length > 1">Usar los mismos datos para todas las suscripciones</span>
+                        -->
+
+                        <br ng-if="registro.suscripciones.length > 1">
+                        <div ng-show="requiereFacturacion == true">
+                            <div ng-show="registro.solicitudUSuario.existe == true && FactuacionCliente.length > 0">
+                                <label for="facturacionId">Seleccionar facturación ya registrada: </label>
+                                <select class="form-control" id="facturacionId" name="facturacionId" ng-model="suscripcion.facturacion.FacturacionId" ng-change="facturacionExistenteSeleccionada(this)">
+                                    <option value="0" selected="selected">Seleccionar facturación registrada</option>
+                                    <option ng-repeat="fact in FactuacionCliente" value="{{ fact.FacturacionId}}">{{ fact.RazonSocial}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="panel-body" ng-if="isRequiereFacturacion()" ng-repeat="suscripcion in registro.suscripciones| limitTo: mismaFacturacionLongitud()">
+                        <h5 ng-hide="mismaFacturacion">{{suscripcion.nombre}}</h5>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>RFC</label>
+                                <input ng-change="isMismaFacturacion()" class="form-control" type="text" id="facturacionRFC" ng-model="suscripcion.facturacion.RFC" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Razon Social</label>
+                                <input ng-change="isMismaFacturacion()" class="form-control" type="text" id="facturacionRZ"  ng-model="suscripcion.facturacion.razonSocial" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Notas</label>
+                                <textarea ng-change="isMismaFacturacion()" class="form-control" id="facturacionNotas"  ng-model="suscripcion.facturacion.notas"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3>Datos de Pago</h3>
+                            </div>
+
+                            <div class="row col-md-4" style="margin-top: 20px">
+                                <div class="col-md-4">
+                                    <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mc_vrt_thmb_45_2x.png" style="width:43px">
+                                </div>
+                                <div class="col-md-4">
+                                    <i style="color:#073A7A" class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-4">
+                                    <i style="color:#168FD4" class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div> <!--row-->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span>Añadir una nueva tarjeta para realizar pagos: </span>
+                                <input type="hidden" ng-model="pagos.targeta.id" value=""/>
+                                <br>
+
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" ng-init="requiereTarjeta = true" ng-model="requiereTarjeta" ng-change="requiereTarjetaCredito()">
+                                    Registrar una nueva tarjeta: 
+                                </label>
+                                <!--
+                                <span>Usar una tarjeta previamente registrada:  </span>
+                                <input type="checkbox" ng-init="requiereTarjeta = false" ng-model="requiereTarjeta" ng-change="requiereTarjetaCredito()">
+                                -->
+                                <br>
+                                <div ng-show="requiereTarjeta == false && registro.solicitudUSuario.existe == true && TarjetaCliente.length > 0">
+                                    <label for="tarjetaId">Seleccionar una tarjeta. </label>
+                                    <select class="form-control" id="tarjetaId" name="tarjetaId" ng-model="targetaId" ng-change="tarjetaexistenteRegistrada()">
+                                        <option value="0" selected="selected">Registrar una tarjeta</option>
+                                        <option ng-repeat="cc in TarjetaCliente" value="{{ cc.TarjetaId}}">{{ cc.Marca}} - {{ cc.Terminacion}}</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="panel-body" ng-if="requiereTarjetaCredito()">
+
+                        <!--<div class="panel panel-danger" ng-show="errorTarjeta">
+                            <div class="panel-heading">
+                                {{errorTexto}}
+                            </div>
+                        </div> -->
+
+                        <p>
+                            <input type="hidden" name="token_id" id="token_id" ng-model="session">
+                            <input type="hidden" name="selectedCard" id="selectedCard" ng-model="selectedCard" value="false">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input class="form-control" type="text" size="20" autocomplete="off" placeholder="Como aparece en la tarjeta" data-openpay-card="holder_name"
+                                       required/>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>N&uacute;mero</label>
+                                <input class="form-control" type="text" size="20" autocomplete="off" data-openpay-card="card_number" pattern="[0-9]{7,24}"
+                                       placeholder="Numero de la tarjeta, sin espacios, ni caracteres especiales" required/>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Código de Verificación(CVV2)</label>
+                                <input class="form-control" type="text" size="4" autocomplete="off" data-openpay-card="cvv2" required/>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p>
+                        <div class="col-md-12">
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <label>Fecha de expiraci&oacute;n</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control" data-openpay-card="expiration_month" required>
+                                        <option value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control" data-openpay-card="expiration_year" required>
+                                        <option value=""></option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <br>
+                            <input type="checkbox" name="" required> Acepto los
+                            <a href="https://rotoplaslabs.com/terminos-y-condiciones">Términos y condiciones</a> de rotoplas y la
+                            <a href="https://rotoplaslabs.com/aviso-de-privacidad">Politica de Privacidad</a>
+                            <p>Tu pago es procesado por el payment en linea
+                                <a href="https://www.openpay.mx/">OpenPay</a> compra 100% segura</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <!-- <button class="btn btn-success btn-block" ng-disabled="cargando === true" type="submit">{{textoBoton}} {{sacarSuma() | currency}} --  {{ calcularPromociones() | currency}}</button> -->
+                        <button class="btn btn-success btn-block" ng-disabled="cargando === true" type="submit">{{textoBoton}} {{ calcularPromociones() | currency}}</button>
+                    </div>
+                </div>
+
+
+                </p>
+                </fieldset>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+</form>
+
+
+<div class="modal fade" id="orden" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Orden de Compra</h5>
+            </div>
+            <div class="modal-body" style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <div class="ordenContent">
+                    <!--*|IF:MC_PREVIEW_TEXT|*-->
+                    <!--[if !gte mso 9]><!---->
+                    <span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span>
+                    <!--<![endif]-->
+                    <!--*|END:IF|*-->
+                    <center>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;">
+                            <tr>
+                                <td align="center" valign="top" id="bodyCell" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;">
+                                    <!-- BEGIN TEMPLATE // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <tr>
+                                            <td align="center" valign="top" id="templateHeader" data-template-container="" style="background:#F7F7F7 none no-repeat 50% 50%/contain;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #F7F7F7;background-image: none;background-repeat: no-repeat;background-position: 50% 50%;background-size: contain;border-top: 0;border-bottom: 0;padding-top: 0px;padding-bottom: 0px;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                <tr>
+                                <td align="center" valign="top" width="600" style="width:600px;">
+                                <![endif]-->
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !important;">
+                                                    <tr>
+                                                        <td valign="top" class="headerContainer" style="background:transparent none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;">
+                                                            <div ng-repeat="producto in registro.suscripciones" id="mailContent">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="210" style="width:210px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <div style="text-align: center;">
+                                                                                                    <img data-file-id="224367" height="76" ng-src="{{producto.imagen}}" style="border: 0px;width: 79px;height: 76px;margin: 0px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
+                                                                                                         width="79">
+                                                                                                </div>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="390" style="width:390px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 390px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <span style="font-size:12px">
+                                                                                                        <strong ng-if="!producto.compraUnica">Suscripción Mensual</strong>
+                                                                                                        <strong ng-if="producto.compraUnica">Compra Unica</strong> - {{producto.nombre}}</span>
+                                                                                                    <br>
+                                                                                                    <span style="font-size:10px">
+                                                                                                        <strong>Precio de Lista:</strong>
+                                                                                                        <span ng-if="!producto.compraUnica">{{buscarPrecio(producto.idProducto) | currency}} MXN </span>
+                                                                                                        <span ng-if="producto.compraUnica">{{buscarPrecioCompra(producto.idProducto) | currency}} MXN </span>
+                                                                                                        <span ng-if="!producto.compraUnica"></span>costo mensual</span>
+                                                                                                </p>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="210" style="width:210px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <div style="text-align: center;">
+                                                                                                    <span style="color:#0175be">
+                                                                                                        <strong>Costo / Promoción</strong>
+                                                                                                    </span>
+                                                                                                </div>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="390" style="width:390px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 390px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <span style="font-size:12px">
+                                                                                                        <strong>Primer Pago: </strong>{{generarPrecio(producto) | currency}} MXN </span>
+                                                                                                </p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <span style="font-size:12px">
+                                                                                                        <strong>Promociones:</strong>
+                                                                                                        <span ng-repeat="promo in producto.promociones">{{promo.nombre}}{{$last ? '' : ', '}}</span>
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="210" style="width:210px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <div style="text-align: center;">
+                                                                                                    <span style="color:#0175be">
+                                                                                                        <strong>Código Postal y Fecha de Instalación</strong>
+                                                                                                    </span>
+                                                                                                </div>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="390" style="width:390px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 390px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <span style="font-size:12px">
+                                                                                                        <strong>Código Postal: </strong>{{producto.instalacion.codigoPostal}}</span>
+                                                                                                </p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <span style="font-size:12px" ng-if="producto.instalacion.fechaInstalacion">
+                                                                                                        <strong>Fecha Instalación:</strong>
+                                                                                                        <span ng-if="producto.instalacion.fechaInstalacion">{{producto.instalacion.fechaInstalacion}}</span>
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="210" style="width:210px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <div style="text-align: center;">
+                                                                                                    <span style="color:#0175be">
+                                                                                                        <strong>Dirección de Instalación</strong>
+                                                                                                    </span>
+                                                                                                </div>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="390" style="width:390px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 390px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Calle:</strong>{{producto.instalacion.calle}}</p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>No ext.</strong> {{producto.instalacion.numExt}}
+                                                                                                    <span ng-if="producto.instalacion.numInt">-{{producto.instalacion.numInt}}</span>
+                                                                                                </p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Col.</strong> {{producto.instalacion.colonia}}</p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Del/Mun.</strong> {{producto.instalacion.municipio}}</p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Estado.</strong> {{producto.instalacion.estado}}</p>
+
+                                                                                                <p style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Ciudad/CP.</strong> {{producto.instalacion.ciudad}}, {{producto.instalacion.codigoPostal}}</p>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="210" style="width:210px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <div style="text-align: center;">
+                                                                                                    <span style="color:#0175be">
+                                                                                                        <strong>Datos de Facturación</strong>
+                                                                                                    </span>
+                                                                                                </div>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+<td valign="top" width="390" style="width:390px;">
+<![endif]-->
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 390px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                       width="100%" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-size: 12px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #808080;font-family: Helvetica;text-align: left;">
+
+                                                                                                <p ng-if="producto.facturacion.razonSocial" style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Razón Social:</strong> {{producto.facturacion.razonSocial}}</p>
+
+                                                                                                <p ng-if="!producto.facturacion.razonSocial" style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>Si requiere factura en sus siguientes mensualidades comuniquese al teléfono de atención a clientes
+                                                                                                        5547420835.</strong>
+                                                                                                </p>
+
+                                                                                                <p ng-if="producto.facturacion.razonSocial" style="font-size: 12px;line-height: 125%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #808080;font-family: Helvetica;text-align: left;">
+                                                                                                    <strong>RFC:</strong> {{producto.facturacion.RFC}}</p>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!--[if mso]>
+</td>
+<![endif]-->
+
+                                                                                <!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END TEMPLATE -->
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    <center>
+                        </td>
+                        </tr>
+                        </table>
+                        <style type="text/css">
+                            @media only screen and (max-width: 480px) {
+                                table#canspamBar td {
+                                    font-size: 14px !important;
+                                }
+                                table#canspamBar td a {
+                                    display: block !important;
+                                    margin-top: 10px !important;
+                                }
+                            }
+                        </style>
+                    </center>
+                    <div>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" type="button" ng-click="recargar()" class="btn btn-primary">Terminar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>

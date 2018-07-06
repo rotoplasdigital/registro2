@@ -1,0 +1,764 @@
+<div id="preview1" class="preview" style="background: none;position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px; z-index: 2000000000000"><h4 ng-show="cargando"><center>Procesando</center></h4></div>
+
+<form id="login" ng-hide="logeado"  ng-submit="logearse()">
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="form-group">
+				<label>Correo</label>
+				<input type="email" name="" class="form-control" ng-model="correo">
+			</div>
+		</div>
+		<div class="col-md-4 col-md-offset-4">
+			<div class="form-group">
+				<label>Contrasena</label>
+				<input type="password" name="" class="form-control" ng-model="contrasena">
+			</div>
+		</div>
+		<div class="col-md-4 col-md-offset-4">
+			<button class="btn btn-block btn-primary">Iniciar Sesión</button>
+		</div>
+	</div>
+
+	
+</form>
+
+<div class="container-fluid" ng-show="logeado">
+	<br>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+
+			<div class="panel panel-info" style="border-color: #bce8f100">
+				<div class="panel-heading"  style="background-color: #1361AC;">
+					<div class="form-group text-center">
+						<h4 style="color:white">Codigo Postal</h4>
+						<input placeholder="Ej. 05500" type="text" ng-model="sugZipCode" ng-change="buscarZipCode(sugZipCode)">
+						<div class="row">
+							<div class="col-md-4 col-md-offset-4">
+								<div class="form-group">
+															<br>
+									<label style="color:white">Vendedor</label>
+										<select class="form-control" ng-model="registro.vendedor">
+							<option value="{{vendedor.id}}" ng-repeat="vendedor in vendedores">{{vendedor.name}}</option>
+						</select>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default" ng-show="suges.length">
+				<div class="panel-heading" >
+					<h3>Productos</h3>
+					
+				</div>
+				<div class="panel-body">
+					<div class="row newRow">
+						<div class="col-md-3" ng-repeat="product in suges">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5 class="text-center">{{buscarNombre(product.idProducto) | capitalize}}</h5>
+								</div>
+								<div class="panel-body">
+									<img class="img-responsive" ng-src="{{buscarImagen(product.idProducto)}}">
+								</div>
+								<div class="panel-footer">
+									<div class="row" style="font-weight: 700; font-size: 11px">
+										<div class="col-md-6">
+											<center><p>Renta: {{buscarPrecio(product.idProducto) | currency}} </p></center>
+											<center><button type="button" class="btn btn-xs btn-success compra" ng-click="agregarSuscripcion(buscar(product.idProducto))">Contratar</button></center>
+										</div>
+										<div class="col-md-6" ng-show="buscarPrecioCompra(product.idProducto)">
+											<center><p ng-show="buscarPrecioCompra(product.idProducto)">Compra: {{buscarPrecioCompra(product.idProducto) | currency}} </p></center>
+											<center><button type="button" class="btn btn-xs btn-info compra" ng-click="agregarCompra(buscar(product.idProducto))">Comprar</button></center>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="carrScroll" class="panel panel-default">
+				<div class="panel-heading"  >
+					<div class="row">
+						<div class="col-md-7">
+							<h3>Carrito</h3>
+						</div>
+						<div class="col-md-3" ng-show="registro.suscripciones.length">
+							<form  ng-submit="validarPromocion()">
+							<div class="form-group">
+								<label>Codigo Promocion</label>
+								<input class="form-control" type="text" ng-model="registro.codigoPromocion" required>
+							</div>
+						</div>
+						<div class="col-md-2" style="margin-top: 25px" ng-show="registro.suscripciones.length">
+								<button type="submit" class="btn btn-info btn-block btn-sm">Validar</button>
+						</div>
+					</form>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="panel panel-warning" ng-hide="registro.suscripciones.length">
+						<div class="panel-heading">
+							<h5>El carrito esta vacio</h5>
+						</div>
+					</div>
+					<div class="panel panel-danger" ng-show="promoValida">
+						<div class="panel-heading">
+							<h5>Codigo de Promoción Invalido</h5>
+						</div>
+					</div>
+					<table class="table" ng-show="registro.suscripciones.length">
+						<thead>
+							<tr>
+								<th></th>
+					      <th>Producto</th>
+					      <th>Tipo</th>
+					      <th>Codigo Postal</th>
+					      <th>Promocion</th>
+					      <th>Precio</th>
+					      <th></th>
+					     </tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="producto in registro.suscripciones">
+								<td style="width: 7%">
+									<img class="img-responsive" ng-src="{{buscarImagen(producto.idProducto)}}">
+								</td>
+								<td>{{buscarNombre(producto.idProducto)}}</td>
+								<td><span ng-if="!producto.compraUnica">Renta</span><span ng-if="producto.compraUnica">Compra</span></td>
+								<td>{{producto.instalacion.codigoPostal}}</td>
+								<td ng-if="!producto.compraUnica">{{buscarPrecio(producto.idProducto) - (buscarPrecio(producto.idProducto)*(descuento/100)) | currency}} c/m</td>
+								<td ng-if="producto.compraUnica">{{buscarPrecioCompra(producto.idProducto) | currency}}</td>
+								<td ng-if="producto.compraUnica">{{producto.precioCompra | currency}}</td>
+								<td><button type="button" class="btn btn-xs btn-warning" ng-click="quitarProducto($index)">Quitar</button></td>
+							</tr>
+							<tr style="background-color: #80808026">
+								<td><b>Total</b></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><b>{{sacarSuma() | currency}}<b></td>
+								<td><button class="btn btn-success btn-xs" ng-click="hacerCheckout()">Hacer Checkout</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+<form id="processCard" ng-submit="hacerPedido()" ng-show="logeado && checkout">
+
+			<div class="panel panel-default" id="datosBasicos">
+				<div class="panel-heading">
+					<h3>Datos Basicos</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Nombre</label>
+							<input class="form-control" type="text" ng-model="registro.cliente.nombre" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Apellido</label>
+							<input class="form-control" type="text" ng-model="registro.cliente.apellido" required>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Correo</label>
+							<input class="form-control" type="email" ng-model="registro.cliente.email" name="cliente_email" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Tipo de Telefono</label>
+							<select class="form-control"  ng-model="registro.cliente.tipoTelefono" required>
+								<option value="Fijo">Fijo</option>
+								<option value="Celular">Celular</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Telefono</label>
+							<input class="form-control" type="number" ng-model="registro.cliente.telefono" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Tipo de Telefono 2</label>
+							<select class="form-control"  ng-model="registro.cliente.tipoTelefono2">
+								<option value="Fijo">Fijo</option>
+								<option value="Celular">Celular</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Telefono 2</label>
+							<input class="form-control" type="number" ng-model="registro.cliente.telefono2">
+						</div>
+					</div>						
+				</div>
+			</div>
+
+			<div class="panel panel-default" ng-show="registro.suscripciones.length">
+				<div class="panel-heading">
+					<h3>Direccion de Instalacion</h3>
+					<input type="checkbox" ng-model="mismaDireccion" ng-init="mismaDireccion = false" ng-change="isMismaDireccion()" ng-show="registro.suscripciones.length > 1"> <span ng-show="registro.suscripciones.length > 1">Usar la misma direccion para todas las suscripciones</span>
+				</div>
+				<div class="panel-body" ng-repeat="suscripcion in registro.suscripciones | limitTo: mismaDireccionLongitud()">
+					<h5 ng-hide="mismaDireccion"> <span ng-show="suscripcion.compraUnica">Compra - </span>{{suscripcion.nombre}}</h5>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Calle</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.calle" required>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Num Ext</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.numExt" required>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Num Int</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.numInt">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Colonia</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.colonia" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Localidad</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.localidad">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Municipio/Delegación</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.municipio" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Ciudad</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.ciudad" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Estado</label>
+							<select ng-change="isMismaDireccion()" class="form-control" ng-model="suscripcion.instalacion.estado" required>
+								<option value="no">Seleccione uno...</option>
+						    <option value="Aguascalientes">Aguascalientes</option>
+					      <option value="Baja California">Baja California</option>
+					      <option value="Baja California Sur">Baja California Sur</option>
+					      <option value="Campeche">Campeche</option>
+					      <option value="Chiapas">Chiapas</option>
+					      <option value="Chihuahua">Chihuahua</option>
+					      <option value="Coahuila">Coahuila</option>
+					      <option value="Colima">Colima</option>
+					      <option value="Ciudad de México">Ciudad de México</option>
+					      <option value="Durango">Durango</option>
+					      <option value="Estado de México">Estado de México</option>
+					      <option value="Guanajuato">Guanajuato</option>
+					      <option value="Guerrero">Guerrero</option>
+					      <option value="Hidalgo">Hidalgo</option>
+					      <option value="Jalisco">Jalisco</option>
+					      <option value="Michoacán">Michoacán</option>
+					      <option value="Morelos">Morelos</option>
+					      <option value="Nayarit">Nayarit</option>
+					      <option value="Nuevo León">Nuevo León</option>
+					      <option value="Oaxaca">Oaxaca</option>
+					      <option value="Puebla">Puebla</option>
+					      <option value="Querétaro">Querétaro</option>
+					      <option value="Quintana Roo">Quintana Roo</option>
+					      <option value="San Luis Potosí">San Luis Potosí</option>
+					      <option value="Sinaloa">Sinaloa</option>
+					      <option value="Sonora">Sonora</option>
+					      <option value="Tabasco">Tabasco</option>
+					      <option value="Tamaulipas">Tamaulipas</option>
+					      <option value="Tlaxcala">Tlaxcala</option>
+					      <option value="Veracruz">Veracruz</option>
+					      <option value="Yucatán">Yucatán</option>
+					      <option value="Zacatecas">Zacatecas</option>
+						  </select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Codigo Postal</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="number" ng-model="suscripcion.instalacion.codigoPostal">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Fecha de Instalacion</label>
+							<input ng-change="isMismaDireccion()" class="form-control" type="datetime-local" ng-model="suscripcion.instalacion.fechaInstalacion">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Notas</label>
+							<textarea ng-change="isMismaDireccion()" class="form-control" ng-model="suscripcion.instalacion.notas"></textarea>
+						</div>
+					</div>	
+					<input class="form-control hidden" type="text" ng-model="suscripcion.instalacion.pais" value="Mexico" hidden>		
+
+				</div>
+			</div>
+
+			<div class="panel panel-default" ng-show="registro.suscripciones.length">
+				<div class="panel-heading">
+					<h3>Direccion de Facturacion</h3>
+					<input type="checkbox" ng-init="requiereFacturacion = false" ng-model="requiereFacturacion" ng-change="isRequiereFacturacion()"> Se requiere facturacion<br>
+					<input type="checkbox" ng-model="mismaFacturacion" ng-change="isMismaFacturacion()" ng-show="registro.suscripciones.length > 1"> <span ng-show="registro.suscripciones.length > 1">Usar la misma direccion para todas las suscripciones</span>
+					<input type="checkbox" ng-model="igualInstalacion" ng-change="isIgualInstalacion()"> Usar la misma direccion de instalacion
+				</div>
+				<div class="panel-body" ng-if="isRequiereFacturacion()" ng-repeat="suscripcion in registro.suscripciones | limitTo: mismaFacturacionLongitud()">
+					<h5 ng-hide="mismaFacturacion">{{suscripcion.nombre}}</h5>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>RFC</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.RFC" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Razon Social</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.razonSocial" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Calle</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.calle" required>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Num Ext</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.numExt" required>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Num Int</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.numInt">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Colonia</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.colonia" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Localidad</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.localidad">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Municipio/Delegación</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.municipio" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Ciudad</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.ciudad" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Estado</label>
+							<select ng-change="isMismaFacturacion()" class="form-control" ng-model="suscripcion.facturacion.estado" required>
+									<option value="no">Seleccione uno...</option>
+							    <option value="Aguascalientes">Aguascalientes</option>
+						      <option value="Baja California">Baja California</option>
+						      <option value="Baja California Sur">Baja California Sur</option>
+						      <option value="Campeche">Campeche</option>
+						      <option value="Chiapas">Chiapas</option>
+						      <option value="Chihuahua">Chihuahua</option>
+						      <option value="Coahuila">Coahuila</option>
+						      <option value="Colima">Colima</option>
+						      <option value="Ciudad de México">Ciudad de México</option>
+						      <option value="Durango">Durango</option>
+						      <option value="Estado de México">Estado de México</option>
+						      <option value="Guanajuato">Guanajuato</option>
+						      <option value="Guerrero">Guerrero</option>
+						      <option value="Hidalgo">Hidalgo</option>
+						      <option value="Jalisco">Jalisco</option>
+						      <option value="Michoacán">Michoacán</option>
+						      <option value="Morelos">Morelos</option>
+						      <option value="Nayarit">Nayarit</option>
+						      <option value="Nuevo León">Nuevo León</option>
+						      <option value="Oaxaca">Oaxaca</option>
+						      <option value="Puebla">Puebla</option>
+						      <option value="Querétaro">Querétaro</option>
+						      <option value="Quintana Roo">Quintana Roo</option>
+						      <option value="San Luis Potosí">San Luis Potosí</option>
+						      <option value="Sinaloa">Sinaloa</option>
+						      <option value="Sonora">Sonora</option>
+						      <option value="Tabasco">Tabasco</option>
+						      <option value="Tamaulipas">Tamaulipas</option>
+						      <option value="Tlaxcala">Tlaxcala</option>
+						      <option value="Veracruz">Veracruz</option>
+						      <option value="Yucatán">Yucatán</option>
+						      <option value="Zacatecas">Zacatecas</option>
+						  </select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Codigo Postal</label>
+							<input ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.codigoPostal" required>
+						</div>
+					</div>	
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Notas</label>
+							<textarea ng-change="isMismaFacturacion()" class="form-control" type="text" ng-model="suscripcion.facturacion.notas"></textarea>
+						</div>
+					</div>
+					<input class="form-control hidden" type="text" ng-model="suscripcion.facturacion.pais" value="Mexico" hidden>		
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-md-8">
+							<h3>Datos de Pago</h3>
+						</div>
+						<div class="col-md-4" style="margin-top: 20px">
+							<div class="col-md-4">
+								<img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mc_vrt_thmb_45_2x.png" style="width:43px">
+							</div>
+							<div class="col-md-4">
+								<i style="color:#073A7A" class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="col-md-4">
+								<i style="color:#168FD4" class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="panel panel-danger" ng-show="errorTarjeta">
+						<div class="panel-heading">
+							{{errorTexto}}
+						</div>
+					</div>
+	        <p>
+	        	<input type="hidden" name="token_id" id="token_id" ng-model="session">
+          	<div class="col-md-12">
+          		<div class="form-group">
+         				<label>Nombre</label>
+          			<input class="form-control" type="text" size="20" autocomplete="off" placeholder="Como aparece en la tarjeta" 
+            data-openpay-card="holder_name" required/>
+        			</div>
+      			</div>
+	        </p>
+	        <p>
+	          <div class="col-md-8">
+	          	<div class="form-group">
+	          		<label>N&uacute;mero</label>
+	          		<input class="form-control" type="text" size="20" autocomplete="off"
+	            data-openpay-card="card_number" required/>
+	        		</div>
+	      		</div>
+	        </p>
+	        <p>
+	          <div class="col-md-4">
+	          	<div class="form-group">
+	          		<label>CVV2</label>
+	          		<input class="form-control" type="text" size="4" autocomplete="off"
+	            data-openpay-card="cvv2" required/>
+	        		</div>
+	      		</div>
+	        </p>
+	        <p>
+	          <div class="col-md-12">
+	          	<div class="form-group">
+	        			<div class="col-md-4">
+	          			<label>Fecha de expiraci&oacute;n</label>
+	        			</div>
+	        			<div class="col-md-4">
+	          			<input class="form-control" type="text" size="2" data-openpay-card="expiration_month" placeholder="MM"required />
+	        			</div>
+	          		<div class="col-md-4">
+	          			<input class="form-control" type="text" size="2" data-openpay-card="expiration_year" placeholder="YY" required />
+	        			</div>
+	      			</div>
+	        	</div>
+	        </p>
+	      </div>
+	    </div>
+	    <br>
+			<button class="btn btn-info pull-right" type="submit">{{textoBoton}}</button>
+
+    </fieldset>
+	</div>
+</div>
+
+		</div>
+
+	</div>
+</div>
+</form>
+
+
+<div class="modal fade" id="orden" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Orden de Compra</h5>
+      </div>
+      <div class="modal-body">
+				<h3>Datos Basicos</h3>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Nombre</label>
+						<input disabled class="form-control" type="text" ng-model="registro.cliente.nombre" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Apellido</label>
+						<input disabled class="form-control" type="text" ng-model="registro.cliente.apellido" required>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Correo</label>
+						<input disabled class="form-control" type="text" ng-model="registro.cliente.email" name="cliente_email" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Tipo de Telefono</label>
+						<select disabled class="form-control"  ng-model="registro.cliente.tipoTelefono" required>
+							<option value="Fijo">Fijo</option>
+							<option value="Celular">Celular</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Telefono</label>
+						<input disabled class="form-control" type="number" ng-model="registro.cliente.telefono" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Tipo de Telefono 2</label>
+						<select disabled class="form-control"  ng-model="registro.cliente.tipoTelefono2">
+							<option value="Fijo">Fijo</option>
+							<option value="Celular">Celular</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Telefono 2</label>
+						<input disabled class="form-control" type="number" ng-model="registro.cliente.telefono2">
+					</div>
+				</div>	
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Codigo Promocion</label>
+						<input disabled class="form-control" type="text" ng-model="registro.codigoPromocion">
+					</div>
+				</div>					
+	      <div ng-show="registro.suscripciones.length">
+					<div>
+						<h3>Direccion de Instalacion</h3>
+					</div>
+					<div ng-repeat="suscripcion in registro.suscripciones | limitTo: mismaDireccionLongitud()">
+						<h5 ng-hide="mismaDireccion">{{suscripcion.nombre}}</h5>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Calle</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.calle" required>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label>Num Ext</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.numExt" required>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label>Num Int</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.numInt">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Colonia</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.colonia" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Localidad</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.localidad">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Municipio/Delegación</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.municipio" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Ciudad</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.ciudad" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Estado</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="text" ng-model="suscripcion.instalacion.estado" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Codigo Postal</label>
+								<input disabled ng-change="isMismaDireccion()" class="form-control" type="number" ng-model="suscripcion.instalacion.codigoPostal" disabled>
+							</div>
+						</div>	
+						<input disabled class="form-control hidden" type="text" ng-model="suscripcion.instalacion.pais" value="Mexico" hidden>	
+					</div>
+				</div>	
+				<div class="" ng-show="registro.suscripciones.length">
+					<div class="">
+						<h3>Direccion de Facturacion</h3>
+					</div>
+					<div class="" ng-if="isRequiereFacturacion()" ng-repeat="suscripcion in registro.suscripciones | limitTo: mismaFacturacionLongitud()">
+						<h5 ng-hide="mismaFacturacion">{{suscripcion.nombre}}</h5>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>RFC</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.RFC" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Razon Social</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.razonSocial" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Calle</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.calle" required>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label>Num Ext</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.numExt" required>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label>Num Int</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.numInt">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Colonia</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.colonia" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Localidad</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.localidad">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Municipio/Delegación</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.municipio" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Ciudad</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.ciudad" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Estado</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.estado" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Codigo Postal</label>
+								<input disabled class="form-control" type="text" ng-model="suscripcion.facturacion.codigoPostal" required>
+							</div>
+						</div>	
+						<input disabled class="form-control hidden" type="text" ng-model="suscripcion.facturacion.pais" value="Mexico" hidden>		
+					</div>
+				</div>
+				<h3>Datos de la tarjeta</h3>
+				<div class="panel-body">
+					<div class="panel panel-danger" ng-show="errorTarjeta">
+						<div class="panel-heading">
+							{{errorTexto}}
+						</div>
+					</div>
+	       		<p>
+	          	<div class="col-md-12">
+	          		<div class="form-group">
+	          			<label>Nombre</label>
+	          			<input disabled ng-model="registro.tarjeta.nombre" class="form-control" type="text" size="20" autocomplete="off" placeholder="Como aparece en la tarjeta"/>
+	        			</div>
+	      			</div>
+	        	</p>
+	        	<p>
+	          	<div class="col-md-8">
+	          		<div class="form-group">
+	          			<label>N&uacute;mero</label>
+	          			<input ng-model="registro.tarjeta.numero" disabled class="form-control" type="text" size="20" autocomplete="off"/>
+	        			</div>
+	      			</div>
+	        	</p>
+	        </div>
+			</div>
+      <div class="modal-footer">
+        <button data-dismiss="modal" type="button" ng-click="recargar()" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
