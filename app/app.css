@@ -198,3 +198,10 @@ body {
     border-color: #fff;
     border-radius: 17px;
 }
+
+.cp-input {
+    background-color: #009CDE;
+    padding: 6%;
+    border-radius: 15px;
+    box-shadow: -1px 9px 24px 6px rgba(0,0,0,0.15);
+}
